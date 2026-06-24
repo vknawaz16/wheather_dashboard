@@ -1,0 +1,94 @@
+/* Basic page setup */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main container */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+/* Search box */
+.search-box {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 8px 12px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #357ab8;
+}
+
+/* Weather card */
+.weather-card h2 {
+  margin: 10px 0 0;
+}
+
+.weather-card #temperature {
+  font-size: 40px;
+  margin: 5px 0;
+  color: #4a90e2;
+}
+
+.weather-card #condition {
+  text-transform: capitalize;
+  color: #555;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Error message */
+#error {
+  color: red;
+}
+
+/* Utility class to hide elements */
+.hidden {
+  display: none;
+}
+
+/* Simple responsiveness for small screens */
+@media (max-width: 360px) {
+  .container {
+    width: 90%;
+  }
+}

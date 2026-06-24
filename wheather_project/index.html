@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Weather Dashboard</h1>
+
+    <!-- Search box -->
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Loading message, hidden by default -->
+    <p id="loading" class="hidden">Loading...</p>
+
+    <!-- Error message, hidden by default -->
+    <p id="error" class="hidden">City not found. Please try again.</p>
+
+    <!-- Weather card, hidden until we have data -->
+    <div id="weatherCard" class="weather-card hidden">
+      <h2 id="cityName"></h2>
+      <p id="condition"></p>
+      <h1 id="temperature"></h1>
+
+      <div class="details">
+        <p>Humidity: <span id="humidity"></span>%</p>
+        <p>Wind Speed: <span id="wind"></span> km/h</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
